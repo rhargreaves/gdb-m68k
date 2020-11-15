@@ -11,7 +11,7 @@ RUN cd gdb-6.4 && \
 		--disable-dependency-tracking \
 		--with-python \
 		--without-ncurses \
-		--target=m68k-elf && \
+		--enable-targets=all && \
 	make
 WORKDIR "/gdb-6.4/gdb/"
 ENTRYPOINT ["./gdb"]
